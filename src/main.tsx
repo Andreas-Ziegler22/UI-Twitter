@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <div className="layout">
       <aside className="sidebar">
-        <img src={twitterLogo} alt="Logo" />
+        <img className="logo" src={twitterLogo} alt="Logo" />
         <nav></nav>
         <button>Tweet</button>
       </aside>

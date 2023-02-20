@@ -44,6 +44,11 @@ a {
   gap: 2rem;
 }
 
+.sidebar .logo {
+  width: 2rem;
+  height: 2rem;
+}
+
 .content {
   border-left: 1px solid #ebeef0;
   border-right: 1px solid #ebeef0;
