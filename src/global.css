@@ -37,7 +37,14 @@ a {
 }
 
 .sidebar {
+  padding: 1.5rem 1.25rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .content {
+  border-left: 1px solid #ebeef0;
+  border-right: 1px solid #ebeef0;
 }
