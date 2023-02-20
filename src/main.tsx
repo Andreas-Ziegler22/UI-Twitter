@@ -11,7 +11,9 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <aside className="sidebar">
         <img className="logo" src={twitterLogo} alt="Logo" />
         <nav></nav>
-        <button>Tweet</button>
+        <button className="new-tweet" type="button">
+          Tweet
+        </button>
       </aside>
       <div className="content">Content</div>
     </div>
