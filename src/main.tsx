@@ -8,6 +8,7 @@ import {
   FileText,
   Hash,
   House,
+  Sparkle,
   User,
 } from "phosphor-react";
 
@@ -58,7 +59,14 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           Tweet
         </button>
       </aside>
-      <div className="content">Content</div>
+      <div className="content">
+        <main className="timeline">
+          <div className="timeline-header">
+            Home
+            <Sparkle />
+          </div>
+        </main>
+      </div>
     </div>
   </React.StrictMode>
 );
