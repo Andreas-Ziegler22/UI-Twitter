@@ -8,6 +8,7 @@ import {
   FileText,
   Hash,
   House,
+  User,
 } from "phosphor-react";
 
 import "./global.css";
@@ -42,6 +43,10 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           </a>
           <a href="">
             <FileText />
+            Lists
+          </a>
+          <a href="">
+            <User />
             Profile
           </a>
           <a href="">
