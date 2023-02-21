@@ -67,6 +67,8 @@ a {
   filter: brightness(0.9);
 }
 
+/* Nav */
+
 .main-navigation {
   display: flex;
   flex-direction: column;
@@ -80,6 +82,15 @@ a {
   font-size: 1.25rem;
   font-weight: 700;
   text-decoration: none;
+}
+
+.main-navigation a svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.main-navigation a.active {
+  color: var(--twitter-blue);
 }
 
 .content {
