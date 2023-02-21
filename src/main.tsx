@@ -1,6 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { House } from "phosphor-react";
+import {
+  Bell,
+  BookmarkSimple,
+  DotsThreeCircle,
+  Envelope,
+  FileText,
+  Hash,
+  House,
+} from "phosphor-react";
 
 import "./global.css";
 
@@ -16,12 +24,30 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             <House weight="fill" />
             Home
           </a>
-          <a href="">Explore</a>
-          <a href="">Notifications</a>
-          <a href="">Messages</a>
-          <a href="">Bookmarks</a>
-          <a href="">Profile</a>
-          <a href="">More</a>
+          <a href="">
+            <Hash />
+            Explore
+          </a>
+          <a href="">
+            <Bell />
+            Notifications
+          </a>
+          <a href="">
+            <Envelope />
+            Messages
+          </a>
+          <a href="">
+            <BookmarkSimple />
+            Bookmarks
+          </a>
+          <a href="">
+            <FileText />
+            Profile
+          </a>
+          <a href="">
+            <DotsThreeCircle />
+            More
+          </a>
         </nav>
         <button className="new-tweet" type="button">
           Tweet
