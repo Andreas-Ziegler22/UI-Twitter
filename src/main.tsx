@@ -65,6 +65,18 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             Home
             <Sparkle />
           </div>
+
+          <form className="new-tweet-form">
+            <label htmlFor="tweet">
+              <img
+                src="https://github.com/Andreas-Ziegler22.png"
+                alt="Andreas Ziegler"
+              />
+              <textarea id="tweet" placeholder="What's happening?" />
+            </label>
+
+            <button type="submit">Tweet</button>
+          </form>
         </main>
       </div>
     </div>
