@@ -10,7 +10,15 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <div className="layout">
       <aside className="sidebar">
         <img className="logo" src={twitterLogo} alt="Logo" />
-        <nav></nav>
+        <nav className="main-navigation">
+          <a href="">Home</a>
+          <a href="">Explore</a>
+          <a href="">Notifications</a>
+          <a href="">Messages</a>
+          <a href="">Bookmarks</a>
+          <a href="">Profile</a>
+          <a href="">More</a>
+        </nav>
         <button className="new-tweet" type="button">
           Tweet
         </button>
