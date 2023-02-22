@@ -5,10 +5,12 @@ import { Sparkle } from "phosphor-react";
 import "./global.css";
 
 import { Tweet } from "./components/Tweet";
+import { Sidebar } from "./components/Sidebar";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <div className="layout">
+      <Sidebar />
       <div className="content">
         <main className="timeline">
           <div className="timeline-header">

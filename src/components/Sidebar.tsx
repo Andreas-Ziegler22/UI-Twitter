@@ -1,5 +1,4 @@
 import twitterLogo from "../assets/logo-twitter.svg";
-
 import {
   Bell,
   BookmarkSimple,
@@ -10,6 +9,8 @@ import {
   House,
   User,
 } from "phosphor-react";
+
+import "./Sidebar.css";
 
 export function Sidebar() {
   return (
