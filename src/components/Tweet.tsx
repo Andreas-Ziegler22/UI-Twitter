@@ -1,16 +1,5 @@
-interface TweetProps {
-  user: string;
-  children: string;
-  likes?: number;
-}
+import "./Tweet.css";
 
-export function Tweet(props: TweetProps) {
-  console.log(props);
-  return (
-    <div className="tweet" style={{ borderRadius: 8 }}>
-      <strong>{props.user}</strong>
-      <p>{props.children}</p>
-      <button>Like {props.likes ?? 0}</button>
-    </div>
-  );
+export function Tweet() {
+  return <div className="tweet">hahahaha</div>;
 }
