@@ -80,6 +80,9 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           </form>
           <div className="separator"></div>
           <Tweet />
+          <Tweet />
+          <Tweet />
+          <Tweet />
         </main>
       </div>
     </div>
