@@ -8,6 +8,9 @@ import { Sidebar } from "./components/Sidebar";
 import { Header } from "./components/Header";
 import { Separator } from "./components/Separator";
 
+// like its coming from an API
+const tweets = ["My first tweet", "Test", "I can tweet"];
+
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <div className="layout">
@@ -27,10 +30,10 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             <button type="submit">Tweet</button>
           </form>
           <Separator />
-          <Tweet />
-          <Tweet />
-          <Tweet />
-          <Tweet />
+          {/* here was a nice catch map can return something while forEach doesn't */}
+          {tweets.map((tweet) => {
+            return <Tweet key={tweet} content={tweet} />;
+          })}
         </main>
       </div>
     </div>
