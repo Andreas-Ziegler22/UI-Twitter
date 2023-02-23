@@ -8,7 +8,7 @@ interface TweetProps {
 
 export function Tweet(props: TweetProps) {
   return (
-    <Link to="#" className="tweet">
+    <Link to="/status" className="tweet">
       <img
         src="https://github.com/Andreas-Ziegler22.png"
         alt="Andreas Ziegler"
