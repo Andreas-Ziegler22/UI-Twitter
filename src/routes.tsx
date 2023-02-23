@@ -7,7 +7,7 @@ export const router = createBrowserRouter([
     element: <Timeline />,
   },
   {
-    path: "/tweet",
-    element: <h1>Tweet</h1>,
+    path: "/status",
+    element: <Status />,
   },
 ]);
