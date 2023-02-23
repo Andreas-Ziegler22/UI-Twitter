@@ -13,6 +13,8 @@ export function Status() {
   return (
     <main className="status">
       <Header title="Tweet" />
+      <Tweet content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem autem cupiditate dicta et quo mollitia." />
+      <Separator />
       <form className="answer-tweet-form">
         <label htmlFor="tweet">
           <img
@@ -24,7 +26,6 @@ export function Status() {
 
         <button type="submit">Answer</button>
       </form>
-      <Separator />
       {/* here was a nice catch map can return something while forEach doesn't */}
       {answers.map((answer) => {
         return <Tweet key={answer} content={answer} />;
