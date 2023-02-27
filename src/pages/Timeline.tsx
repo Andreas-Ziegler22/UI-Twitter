@@ -1,3 +1,4 @@
+import { FormEvent, useState } from "react";
 import { Header } from "../components/Header";
 import { Separator } from "../components/Separator";
 import { Tweet } from "../components/Tweet";
@@ -5,19 +6,36 @@ import { Tweet } from "../components/Tweet";
 import "./Timeline.css";
 
 // like its coming from an API
-const tweets = ["My first tweet", "Test", "I can tweet"];
+let newTweet = "";
 
 export function Timeline() {
+  const [tweets, setTweets] = useState([
+    "My first tweet",
+    "Test",
+    "I can tweet",
+  ]);
+  function createNewTweet(event: FormEvent) {
+    event.preventDefault();
+
+    setTweets([newTweet]);
+  }
+
   return (
     <main className="timeline">
       <Header title="Home" />
-      <form className="new-tweet-form">
+      <form onSubmit={createNewTweet} className="new-tweet-form">
         <label htmlFor="tweet">
           <img
             src="https://github.com/Andreas-Ziegler22.png"
             alt="Andreas Ziegler"
           />
-          <textarea id="tweet" placeholder="What's happening?" />
+          <textarea
+            id="tweet"
+            placeholder="What's happening?"
+            onChange={(event) => {
+              newTweet = event.target.value;
+            }}
+          />
         </label>
 
         <button type="submit">Tweet</button>
