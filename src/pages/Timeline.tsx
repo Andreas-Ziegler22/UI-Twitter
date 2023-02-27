@@ -18,6 +18,16 @@ export function Timeline() {
     setTweets([newTweet, ...tweets]);
     setNewTweet("");
   }
+  function handHotKeySubmit(event: KeyboardEvent) {
+    // if (event.key === "Enter" && (event.ctrlKey || event.metaKey)) {
+    //   setAnswers([newAnswer, ...answers]);
+    //   setNewAnswer("");
+    // }
+    if (event.key === "Enter") {
+      setTweets([newTweet, ...tweets]);
+      setNewTweet("");
+    }
+  }
 
   return (
     <main className="timeline">
@@ -31,6 +41,7 @@ export function Timeline() {
           <textarea
             id="tweet"
             placeholder="What's happening?"
+            onKeyDown={handHotKeySubmit}
             value={newTweet}
             onChange={(event) => {
               setNewTweet(event.target.value);
